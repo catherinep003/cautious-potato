@@ -4,7 +4,8 @@ import userAction
 class CsvRead():
 
     def __init__(self):
-        filename = userAction.promptInput("Enter the CSV filename: ") + ".csv"
+        filename = userAction.promptInput("Enter the CSV file name: ")
+        filename += "" if ".csv" in filename else ".csv"
         self.csvFile = open("../resources/" + filename)
         self.csvReader = csv.reader(self.csvFile)
 
