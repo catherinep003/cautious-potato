@@ -1,7 +1,7 @@
 # cautious-potato
 Simple script to automatically generate text files containing student grades from a CSV file. Each text file is added to the respective student assignment file submission directory.
 
-If a student has more than one submission for a given assignment, the script will find the newest submission folder and insert the mark file there. 
+If a student has more than one submission for a given assignment, the script will find the newest submission folder and insert the mark file there.
 
 ## Instructions
 1. There should be a 'resources' folder that contains:
@@ -29,19 +29,12 @@ assignmentRoot\
 ```
 
 Folder name examples:
-* **Course**  
-  `ABCD123-A-4`  
+* Course: `ABCD123-A-4`  
   where `ABCD123` is the course ID, `A` is the section and `4` is the semester number
-
-* **Student**  
-  `12345678-user_name`  
+* Student: `12345678-user_name`  
   where `12345678` is the student ID
-
-* **Assignment**  
-  `theory_assignment-1`  
-
-* **Submission Timestamp**  
-  `2016-Feb-4-16h56m4s762ms`
+* Assignment: `theory_assignment-1`  
+* Submission Timestamp: `2016-Feb-4-16h56m4s762ms`
 
 Please note that the script only needs to take into consideration the student ID and the submission timestamp.
 
