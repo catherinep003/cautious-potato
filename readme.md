@@ -12,10 +12,10 @@ assignmentRoot\
         [submissionTimestamp]
 ```
 
-**Student Folder Name Format Example**
+**Student Folder Name Format Example**  
 `12345678-user_name` where `12345678` is the student ID
 
-**Submission Timestamp Folder Name Format Example**
+**Submission Timestamp Folder Name Format Example**  
 `2016-Feb-4-16h56m4s762ms`
 
 ## CSV File Format
@@ -26,18 +26,18 @@ Student ID | Grade 1 (/X) | Grade n (/X) | Total (/X) | Notes
 12345678 | 1 | ... | 20 |
 
 ## Mark File Format
-Student ID: 12345678\n
-Grade 1 (/X): 1\n
-...\n
-Total (/X): 20\n
-Notes:\n
+Student ID: 12345678  
+Grade 1 (/X): 1  
+...  
+Total (/X): 20  
+Notes:  
 
 ## Instructions
 1. There should be a 'resources' folder that contains:
   * the CSV file that contains all the grades
   * and the folder containing all the assignments of the students
 2. Open command prompt or terminal
-3. Navigate to the script directory\n
+3. Navigate to the script directory  
   e.g. `cd \cautious-potato\src`
 4. Run
   * `main.py` or
