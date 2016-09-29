@@ -1,44 +1,44 @@
 # cautious-potato
 Simple script to automatically generate text files containing student grades from a CSV file. Each text file is added to the respective student assignment file submission directory.
 
-## Formats
-Please note that it is important to follow the CSV file format shown below for the best results.
-
-### Assignment Directory Format
+## Assignment Directory Format
 The following format indicates the assignment folder in which the student assignment submissions can be found that must be copied/moved to the `resources` folder.
 
-`assignmentRoot\
+```
+assignmentRoot\
   [course]\
     [student]\
       [assignment]\
-        [submissionTimestamp]`
+        [submissionTimestamp]
+```
 
-#### Student Folder Name Format
-`[studentID]-[username]`
-e.g. `12345678-user_name`
+**Student Folder Name Format Example**
+`12345678-user_name` where `12345678` is the student ID
 
-#### Submission Timestamp Folder Name Format
-`[year]-[month]-[day]-[hour]h[minute]m[second]s[millisecond]ms`
-e.g. `2016-Feb-4-16h56m4s762ms`
+**Submission Timestamp Folder Name Format Example**
+`2016-Feb-4-16h56m4s762ms`
 
-### CSV File Format
+## CSV File Format
+Please note that it is important to follow the CSV file format shown below for the best results.
+
 Student ID | Grade 1 (/X) | Grade n (/X) | Total (/X) | Notes
 -----------|--------------|--------------|------------|------
 12345678 | 1 | ... | 20 |
 
-### Mark File Format
-Student ID: 12345678
-Grade 1 (/X): 1
-...
-Total (/X): 20
-Notes:
+## Mark File Format
+Student ID: 12345678\n
+Grade 1 (/X): 1\n
+...\n
+Total (/X): 20\n
+Notes:\n
 
 ## Instructions
 1. There should be a 'resources' folder that contains:
   * the CSV file that contains all the grades
   * and the folder containing all the assignments of the students
 2. Open command prompt or terminal
-3. Navigate to the script directory e.g. `cd \cautious-potato\src`
+3. Navigate to the script directory\n
+  e.g. `cd \cautious-potato\src`
 4. Run
   * `main.py` or
   * `python main.py`
