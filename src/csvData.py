@@ -12,13 +12,18 @@ class CsvData():
         self.studentGrades = {}
         for i in range(1, len(dataList)):
             dataPair = {}
-            studentID = "00000000"
+            studentID = ""
             for j in range(len(dataList[i])):
                 key = self.columnNames[j]
                 dataPair[key] = dataList[i][j]
-                if key == "Student ID":
-                    studentID = dataPair[key]
-            self.studentGrades[studentID] = dataPair
+                if "Student ID" in key:
+                    if studentID == "":
+                        studentID = dataPair[key]
+                    else:
+                        if dataPair[key] != "":
+                            studentID += "_" + dataPair[key]
+            if studentID != "":
+                self.studentGrades[studentID] = dataPair
 
     def getStudentGrades(self):
         return self.studentGrades

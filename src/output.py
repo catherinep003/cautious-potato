@@ -5,7 +5,8 @@ def determineFileContent(columnNames, dataPair):
     fileContent = []
     for index in range(len(columnNames)):
         key = columnNames[index]
-        fileContent.append(key + ": " + dataPair[key] + "\n")
+        if key != "Notes":
+            fileContent.append(key + ": " + dataPair[key] + "\n")
     return "".join(fileContent)
 
 def writeToFile(fileFolderPath, filename, fileContent):

@@ -19,6 +19,8 @@ class AssignmentPath():
 
     def findAssignmentPathOfStudent(self, studentID):
         studentAssignmentPath = ""
+        if "_" in studentID:
+            studentID = studentID.split("_")[0]
         for root, dirs, files in os.walk(self.assignmentPath):
             for name in dirs:
                 if studentID in name:
